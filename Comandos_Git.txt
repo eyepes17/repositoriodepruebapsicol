@@ -1,0 +1,58 @@
+git init // crea un nuevo repositorio en el directorio en el que estoy y va ser manejado por git
+
+vi .gitignore // Para hacer que este archivo no esté traqueado por git
+
+git status // estado de los archivos
+
+git add -A  // Para agregar estos archivos en el staging area
+
+git rm --cached .gitignore // borar un archivo
+
+git add .gitignore // agregar un archivo
+
+git commit -m "Agregando mis primeros archivos" // para que aparescan en el repositorio local 
+
+git log // para ver todo el historial
+
+
+
+-- PARA AGREGAR LOS ARCHIVOS A UN REPOSITIORIO REMOTO -- 
+
+
+git config --global user.name "Edison Manrique" 
+
+git config --global user.email "edisonmrq@gmail.com"
+
+git config –list // para saber las configuraciones 
+
+
+
+git remote add origin https://github.com/eyepes17/ProyectoCiclo3Apartaya.git // Conexion 
+
+git branch -M master // los archivos los vamos a colocar en la rama master
+
+git push -u origin master // enviamos los archivo a la rama master
+
+git pull origin master // para bajar los archivos actuales del repositorio remoto
+
+git clone https://github.com/eyepes17/ProyectoCiclo3Apartaya.git // clonar repositorio por medio de HTTPS
+
+git diff // para ver las diferencias de los archivos antes de darles el commit 
+
+
+git branch minuevarama // para crear una nueva rama
+
+git checkout minuevarama // para cambiarme de rama
+
+git branch -a // para ver todas las ramas
+
+git branch --merged // para saber en que rama estamos
+
+git merge // para fusionar la trama que creamos con la master, se hace desde la rama master
+
+git push origin --delete minuevarama // borrar rama 
+
+git branch origin -d minuevarama //borrar del todo
+
+
+
